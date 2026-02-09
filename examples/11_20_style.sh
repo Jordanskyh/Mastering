@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb2"
-MODEL="stabilityai/stable-diffusion-xl-base-1.0"
+MODEL="dataautogpt3/ProteusV0.5"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/a5e2618ce8c7d633_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T233809Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a3058ab3f0620a97c0ee489866ccc3ed0d830a4ff0bad00451a08ad7904b355"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="11-20-stabilityai-stable-diffusion-xl-base-style-master"
+EXPECTED_REPO_NAME="01-10-dataautogpt3-Proteus-style-master"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
