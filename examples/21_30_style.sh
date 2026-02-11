@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb3"
-MODEL="dataautogpt3/ProteusV0.5"
+MODEL="GraydientPlatformAPI/albedobase2-xl"
 DATASET_ZIP="hthttps://s3.eu-central-003.backblazeb2.com/gradients-validator/efceb23b68597a88_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T130413Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eb8ea41fb6e1f2fe280fc88ff7c33608a8a658156e3b264345981a995d5210ef"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="21-30-dataautogpt3-Proteus-style-master"
+EXPECTED_REPO_NAME="21-30-GraydientPlatformAPI-albedobase2-xl-style-master"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
