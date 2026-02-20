@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TASK_ID="4a536cf1-346c-49ef-9d77-88ac382964b6"
-MODEL="misri/zavychromaxl_v90"
+MODEL="misri/leosamsHelloworldXL_helloworldXL70"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/120aec673785fff4_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T223334Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d34eaa35955e633cc4fc169e93e982d4803418dbfa32979fc0641fc0dbbd09dc"
 EXPECTED_REPO_NAME="31-50-misri/leo-style-master"
 
