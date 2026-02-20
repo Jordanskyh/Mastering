@@ -1,10 +1,9 @@
 #!/bin/bash
 
-TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb0"
-MODEL="GraydientPlatformAPI/albedobase2-xl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/5857f8a12db5dbcf_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T024013Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fbd19abc9094c7b68d2bed8599ed86841d214983125d81c5d652f36809c9eb02"
-MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="01-10-GraydientPlatformAPI-albedobase2-xl-style-master"
+TASK_ID="adcda8d7-d391-4efa-aca0-da201222980e"
+MODEL="misri/zavychromaxl_v90"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/d5497019840c5f6d_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T210415Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1bb20c8e1797b90556bcb5a36dee3bd6c1ffa6ecfca0b2b1280e281a78636686"
+EXPECTED_REPO_NAME="01-10-misri/leo-style-master"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
