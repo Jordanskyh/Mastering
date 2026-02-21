@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="ed5ba5f2-bcb6-4487-a76c-aa1314a86746"
-MODEL="misri/leosamsHelloworldXL_helloworldXL70"
+TASK_ID="8d40ae4c-1bd4-4e60-b0a1-66111d331311"
+MODEL=""
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/0ac123971d0dba62_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T212720Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0055ed0a7722452185d64b044a626be0cb33c20bc78ff7128228065d104301fe"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="31-50-misri/leo-person-master"
+EXPECTED_REPO_NAME="31-50-cagliostrolab-person-master"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
