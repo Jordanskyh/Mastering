@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="3e95c3b9-620a-43d0-be21-7f9446f9c20b"
-MODEL=""
+MODEL="Corcelio/mobius"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/ede838a94e9f4742_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T152917Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c27860d7f1bbb1ff73fb584862daf04e958662c0207864cc746630e34a588877"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="01-10-cagliostrolab-person-master"
+EXPECTED_REPO_NAME="01-10-corcelio-person-master"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
