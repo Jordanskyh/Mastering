@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="df8084d1-c736-4e9e-9798-e18ae4d6f378"
-MODEL="misri/zavychromaxl_v90"
+MODEL="dataautogpt3/TempestV0.1"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/205832cd479bfa34_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260319%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260319T201621Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3f6abfe6ae005e4b58e7b8a117cf0befe56041b09e787560a8b89fea7da7041a"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="misrizavychromaxl-st31-50"
+EXPECTED_REPO_NAME="dataautogpt3TempestV0.1-st31-50"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
