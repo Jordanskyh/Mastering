@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="ed5ba5f2-bcb6-4487-a76c-aa1314a86746"
-MODEL="Corcelio/mobius"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/e14fa2f48ebd75af_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260220%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260220T182457Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af94be1cb299e2d8d05aaa5b2ad587618e8271e7bd763e381231bd4b7111f183"
+TASK_ID="255ccd97-05df-4aa0-9eb8-c1de1f2f0ab0"
+MODEL="misri/zavychromaxl_v90"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/1f2cafecd9a72738_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260320%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260320T074348Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f0d95bf244b5e88069ee985b6acad144d295199d1d5f1fb9c4d5a60bdf6d84ce"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="11-20-corcelio-person-master"
+EXPECTED_REPO_NAME="misri/zavychromaxl-ps11-20"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"

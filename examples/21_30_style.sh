@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="51b8a5c3-9f73-43fb-8bb6-09074dbc6890"
-MODEL="Corcelio/mobius"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/d33e573fa98fa66a_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260220%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260220T154054Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eedb949fb2387fcf11b27d0378309b9acb6d5a40cf4a712bfcdf434a87f0fd8d"
+TASK_ID="d9c02e63-89cd-464e-9c3e-dcae519f14ec"
+MODEL="misri/zavychromaxl_v90"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/ee418970938dc303_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260319%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260319T150648Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7007f40ccfa5940614bf5880443cdcda794642239737d8b54518e8ee0f9f3b8d"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="21-30-corcelio-style-master"
+EXPECTED_REPO_NAME="misri/zavychromaxl-st21-30"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
@@ -21,7 +21,7 @@ echo "Downloading model and dataset..."
 docker run --rm   --volume "$CHECKPOINTS_DIR:/cache:rw"   --name downloader-image   trainer-downloader   --task-id "$TASK_ID"   --model "$MODEL"   --dataset "$DATASET_ZIP"   --task-type "ImageTask"
 
 echo "Starting image training..."
-docker run --rm --gpus all   --security-opt=no-new-privileges   --cap-drop=ALL   --memory=32g   --cpus=8   --network none   --env TRANSFORMERS_CACHE=/cache/hf_cache   --volume "$CHECKPOINTS_DIR:/cache:rw"   --volume "$OUTPUTS_DIR:/app/checkpoints/:rw"   --name image-trainer-example   standalone-image-trainer   --task-id "$TASK_ID"   --model "$MODEL"   --dataset-zip "$DATASET_ZIP"   --model-type "$MODEL_TYPE"   --expected-repo-name "$EXPECTED_REPO_NAME"   --hours-to-complete 0.1
+docker run --rm --gpus all   --security-opt=no-new-privileges   --cap-drop=ALL   --memory=32g   --cpus=8   --network none   --env TRANSFORMERS_CACHE=/cache/hf_cache   --volume "$CHECKPOINTS_DIR:/cache:rw"   --volume "$OUTPUTS_DIR:/app/checkpoints/:rw"   --name image-trainer-example   standalone-image-trainer   --task-id "$TASK_ID"   --model "$MODEL"   --dataset-zip "$DATASET_ZIP"   --model-type "$MODEL_TYPE"   --expected-repo-name "$EXPECTED_REPO_NAME"   --hours-to-complete 1
 
 echo "Uploading model to HuggingFace..."
 docker run --rm --gpus all   --volume "$OUTPUTS_DIR:/app/checkpoints/:rw"   --env HUGGINGFACE_TOKEN="$HUGGINGFACE_TOKEN"   --env HUGGINGFACE_USERNAME="$HUGGINGFACE_USERNAME"   --env TASK_ID="$TASK_ID"   --env EXPECTED_REPO_NAME="$EXPECTED_REPO_NAME"   --env LOCAL_FOLDER="$LOCAL_FOLDER"   --env HF_REPO_SUBFOLDER="checkpoints"   --name hf-uploader   hf-uploader
