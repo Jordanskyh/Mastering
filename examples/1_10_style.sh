@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="ce572e5a-508f-4978-9088-3ba041c8971c"
-MODEL="dataautogpt3/TempestV0.1"
+MODEL="stablediffusionapi/protovision-xl-v6.6"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/0dcff67af933dd23_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260319%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260319T191202Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30717a960a2f8b53fcc911cc1a54599217d20bb15b09425d941e0ea9befbc93c"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="dataautogpt3TempestV0.1-st1-10"
+EXPECTED_REPO_NAME="stablediffusionapiprotovision-xl-v66-st1-10"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Jordansky"
